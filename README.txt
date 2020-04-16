@@ -1,3 +1,3 @@
-Simply spins up the python interpreter within C++, using a pybind11_bazel target in Pybind11_bazel
+Simply spins up the python interpreter within C++, using a pybind11_embed target in Pybind11_bazel
 
 bazel run //...
