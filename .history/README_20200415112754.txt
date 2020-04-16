@@ -1,0 +1,2 @@
+Elementary project that simply spins up the python interpreter within C++,
+Using Pybind11 and Bazel
