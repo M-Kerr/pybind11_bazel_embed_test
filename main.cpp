@@ -7,7 +7,13 @@ int main() {
   // Starts embedded Python interpreter
   py::scoped_interpreter guard{};
   // Uses Python API
-  py::print("Hello world, from embedded python interpreter's print output!");
+  py::print("SUCCESS");
+  py::exec(
+      "import sys\n"
+      "print('-------------------')\n"
+      "print('Embedded Python Version:')\n"
+      "print(sys.version)\n"
+      "print('-------------------');");
   std::cout << "Press RETURN to exit";
   std::cin.get();
 
